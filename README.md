@@ -13,7 +13,7 @@ Learning management system build with Sveltekit and Pocketbase.
 
 - Using Sveltekit as frontend of the application
 - Using Pocketbase as the backend
-- Using open-props (maybe?)
+- Using open-props
 - Deployment (TBD)
 
 ### High-level design
@@ -60,3 +60,15 @@ $ npm run dev # or pnpm dev
 ```
 
 ## TODO
+
+- [x] Install styling library
+- [x] Layout with open-props
+- [x] Card for courses
+- [ ] Fitur realtime dengan pocketbase subscribe
+- [ ] Deploy
+- [ ] Form upload content (tentative)
+- [ ] Auth (tentative)
+
+## Prompts
+
+-  Create layout in html and css with header, main and footer
