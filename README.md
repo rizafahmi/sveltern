@@ -65,6 +65,7 @@ $ npm run dev # or pnpm dev
 - [x] Layout with open-props
 - [x] Card for courses
 - [ ] Fitur realtime dengan pocketbase subscribe
+- [ ] Detail page
 - [ ] Deploy
 - [ ] Form upload content (tentative)
 - [ ] Auth (tentative)
