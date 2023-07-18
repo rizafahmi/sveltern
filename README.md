@@ -2,6 +2,12 @@
 
 Learning management system build with Sveltekit and Pocketbase.
 
+We do build in public style in livestreaming format. Follow along video:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rECkmhMt4no" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UmbJdEww9S0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## Brainstorming
 
 ### Functional requirements
@@ -70,6 +76,6 @@ $ npm run dev # or pnpm dev
 - [ ] Form upload content (tentative)
 - [ ] Auth (tentative)
 
-## Prompts
+## Prompts GPT
 
 -  Create layout in html and css with header, main and footer
