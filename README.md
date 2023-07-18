@@ -3,10 +3,9 @@
 Learning management system build with Sveltekit and Pocketbase.
 
 We do build in public style in livestreaming format. Follow along video:
+[![Part 1](https://i.ytimg.com/vi/rECkmhMt4no/maxresdefault.jpg)](https://youtube.com/watch?v=rECkmhMt4no)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rECkmhMt4no" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UmbJdEww9S0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+[![Part 2](https://i.ytimg.com/vi/UmbJdEww9S0/maxresdefault.jpg)](https://youtube.com/watch?v=UmbJdEww9S0)
 
 ## Brainstorming
 
