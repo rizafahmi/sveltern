@@ -1,16 +1,16 @@
 <script>
- export let data
+ export let data;
 </script>
 
-<!-- <pre>{JSON.stringify(data, null, 2)}</pre> -->
+<!-- <pre>{JSON.stringify($courses, null, 2)}</pre> -->
 <div class="courses">
     {#each data.courses as course}
         <div class="course">
             <div class="thumbnail">
-            {#if course.thumbnail !== ""}
-                <img width="128" src="http://127.0.0.1:8090/api/files/{course.collectionId}/{course.id}/{course.thumbnail}" />
+                {#if course.thumbnail !== ""}
+                    <img width="128" src="http://127.0.0.1:8090/api/files/{course.collectionId}/{course.id}/{course.thumbnail}" />
                 {:else}
-                <img width="128" src="/logo.png" />
+                    <img width="128" src="/logo.png" />
                 {/if}
             </div>
             <div class="content">

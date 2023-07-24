@@ -2,7 +2,7 @@
 
 Learning management system build with Sveltekit and Pocketbase.
 
-We do build in public style in livestreaming format. Follow along video:
+Doing build in public style in livestreaming format. Follow along video:
 [![Part 1](https://i.ytimg.com/vi/rECkmhMt4no/maxresdefault.jpg)](https://youtube.com/watch?v=rECkmhMt4no)
 
 [![Part 2](https://i.ytimg.com/vi/UmbJdEww9S0/maxresdefault.jpg)](https://youtube.com/watch?v=UmbJdEww9S0)
@@ -69,12 +69,43 @@ $ npm run dev # or pnpm dev
 - [x] Install styling library
 - [x] Layout with open-props
 - [x] Card for courses
+- [x] Detail page
+- [ ] Styling detail page
+- [ ] Add Chapters table
 - [ ] Fitur realtime dengan pocketbase subscribe
-- [ ] Detail page
 - [ ] Deploy
 - [ ] Form upload content (tentative)
 - [ ] Auth (tentative)
 
 ## Prompts GPT
 
--  Create layout in html and css with header, main and footer
+Prompt template: 
+1. State clear and desired output
+2. Give context of the product we build
+3. Describe exactly what it should contain
+4. Final goal for a reminder or highlight
+
+### Prompts
+#### Prompt for course index page
+Create layout in html and css with header, main and footer
+
+Improved Prompt
+
+```text
+Your task is to create HTML and CSS for a system or application that described by the text delimeted by triple dash below.
+
+Create page for the list of courses in card display with thumbnail, title, description and an action button.
+
+Consider the following guidelines for the code:
+- Ensure the code is simple and easy to understand
+- Avoid using complex CSS features
+- If possible, use open-props.style for the CSS
+- Use an elegant and neutral color palette based on open-props colors
+- Use neo-brutalism design style
+
+Your final result should be bold, engaging and visually appealing list page that effectively showcases the Sveltern brand.
+
+---
+Sveltern is a simple learning management system for visual learner and provide engaging video courses.
+---
+```

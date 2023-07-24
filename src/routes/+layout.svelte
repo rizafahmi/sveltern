@@ -1,5 +1,14 @@
 <script>
+    import { writable } from 'svelte/store';
+    import { setContext } from 'svelte';
+
     import './style.css';
+    export let data;
+
+    const courses = writable(null);
+    courses.set(data.courses);
+
+    setContext('courses', courses);
 </script>
 
 <header>
