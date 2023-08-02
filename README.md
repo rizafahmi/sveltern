@@ -72,7 +72,7 @@ $ npm run dev # or pnpm dev
 - [x] Detail page
 - [ ] Styling detail page
 - [ ] Add Chapters table
-- [ ] Fitur realtime dengan pocketbase subscribe
+- [ ] Fitur realtime dengan pocketbase subscribe (mohon bantuannya)
 - [ ] Deploy
 - [ ] Form upload content (tentative)
 - [ ] Auth (tentative)
