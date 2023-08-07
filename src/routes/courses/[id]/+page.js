@@ -1,6 +1,6 @@
 import { error } from "@sveltejs/kit";
 
-export function load({ params }) {
+export async function load({ params }) {
   return {
     id: params.id,
   };

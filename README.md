@@ -45,6 +45,7 @@ Doing build in public style in livestreaming format. Follow along video:
     - description
     - video_url
     - order
+    - course_id
     
 - categories (TBD)
 
@@ -70,8 +71,12 @@ $ npm run dev # or pnpm dev
 - [x] Layout with open-props
 - [x] Card for courses
 - [x] Detail page
+- [x] Add Chapters table db
+- [x] Show chapters detail
 - [ ] Styling detail page
-- [ ] Add Chapters table
+- [ ] Refactor detail page
+  - Using #await
+- [ ] URL dengan slug (pengganti id)
 - [ ] Fitur realtime dengan pocketbase subscribe (mohon bantuannya)
 - [ ] Deploy
 - [ ] Form upload content (tentative)

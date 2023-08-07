@@ -1,19 +1,30 @@
 <script>
  import { onMount } from 'svelte';
-    export let data;
 
-    let course = undefined;
+ export let data;
 
-    onMount(function() {
-        course = getCourseById(data.id);
-    })
+ let course = undefined;
+ let chapters = [];
 
-    function getCourseById(id) {
-        const { courses } = data;
-        return courses.find(function(course) {
-            return course.id === id;
-        })
-    }
+ onMount(async function() {
+     course = getCourseById(data.id);
+     const chaptersPromise = course.chapters.map(async function(id) {
+         const res = await fetch(`/api/chapters/${id}`)
+         return await res.json();
+     });
+     chapters = await Promise.all(chaptersPromise);
+ });
+
+ function getCourseById(id) {
+     const { courses } = data;
+     return courses.find(function(course) {
+         return course.id === id;
+     });
+ }
+
+ function getChapterById(id) {
+
+ }
 </script>
 
 {#if course !== undefined}
@@ -24,6 +35,14 @@
     {/if}
     <h3>{course.title}</h3>
     <p>{@html course.description}</p>
+    <ul>
+        {#each chapters as chapter}
+            <li>
+                <a>{chapter.title}</a>
+                <p>{chapter.video_url}</p>
+            </li>
+        {/each}
+    </ul>
 {:else}
     <div class="loading-spinner">Loading...</div>
 {/if}
