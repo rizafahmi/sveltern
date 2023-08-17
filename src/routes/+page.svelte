@@ -2,7 +2,6 @@
  export let data;
 </script>
 
-<!-- <pre>{JSON.stringify($courses, null, 2)}</pre> -->
 <div class="courses">
     {#each data.courses as course}
         <div class="course">
