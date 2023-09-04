@@ -16,7 +16,7 @@
                 <h2>{ course.title }</h2>
                 <p>{ @html course.description }</p>
                 <div class="actions">
-                    <a class="button" href="/courses/{course.id}/0">Lihat Materi</a>
+                    <a class="button" href="/courses/{course.slug}/0">Lihat Materi</a>
                 </div>
             </div>
     </div>

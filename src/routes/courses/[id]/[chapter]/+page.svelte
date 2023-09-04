@@ -6,22 +6,22 @@
 
  let course = undefined;
  let chapters = [];
- let currentIndex = $page.params.chapter || 0;
- console.log($page.params)
+ let currentIndex = parseInt($page.params.chapter) || 0;
 
  onMount(async function() {
-     course = getCourseById(data.id);
+     course = getCourseBySlug(data.id);
      const chaptersPromise = course.chapters.map(async function(id) {
          const res = await fetch(`/api/chapters/${id}`)
          return await res.json();
      });
      chapters = await Promise.all(chaptersPromise);
+
  });
 
- function getCourseById(id) {
+ function getCourseBySlug(slug) {
      const { courses } = data;
      return courses.find(function(course) {
-         return course.id === id;
+         return course.slug === slug;
      });
  }
 
@@ -41,7 +41,7 @@
             <ul>
                 {#each chapters as chapter, index}
                     <li class:active={currentIndex === index}>
-                        <a on:click={() => changeChapter(index)} href={`/courses/${course.id}/${index}`}>{chapter.title}</a>
+                        <a on:click={() => changeChapter(index)} href={`/courses/${course.slug}/${index}`}>{chapter.title}</a>
                     </li>
                 {/each}
             </ul>

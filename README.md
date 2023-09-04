@@ -77,9 +77,10 @@ $ npm run dev # or pnpm dev
 - [x] Show detail page per each chapters
 - [x] Redirection logic for each chapter
 - [x] Styling active chapter
+- [x] URL dengan slug (pengganti id)
+- [x] Bug class active not working if page refresh
 - [ ] Refactor detail page
   - Using #await
-- [ ] URL dengan slug (pengganti id)
 - [ ] Fitur realtime dengan pocketbase subscribe (mohon bantuannya)
 - [ ] Deploy
 - [ ] Form upload content (tentative)
