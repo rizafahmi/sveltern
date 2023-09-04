@@ -74,9 +74,9 @@ $ npm run dev # or pnpm dev
 - [x] Add Chapters table db
 - [x] Show chapters detail
 - [x] Styling detail page
-- [ ] Styling active chapter
-- [ ] Show detail page per each chapters
-- [ ] Redirection logic for each chapter
+- [x] Show detail page per each chapters
+- [x] Redirection logic for each chapter
+- [x] Styling active chapter
 - [ ] Refactor detail page
   - Using #await
 - [ ] URL dengan slug (pengganti id)
@@ -85,7 +85,7 @@ $ npm run dev # or pnpm dev
 - [ ] Form upload content (tentative)
 - [ ] Auth (tentative)
 - [ ] Menggunakan aspect ratio untuk thumbnail youtube
-- [ ] Solusi untuk loading thumbnail youtube
+- [ ] Solusi untuk loading thumbnail youtube (tentaive)
 
 ## Prompts GPT
 

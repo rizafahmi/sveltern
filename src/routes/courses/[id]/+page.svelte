@@ -27,8 +27,6 @@
 
  }
 
- let tempChapter = [{title: 'Chapter 1', video_url: 'https://www.youtube.com/embed/1yuc4BI5NWU'}];
-
 </script>
 
 {#if course !== undefined}
