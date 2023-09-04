@@ -6,8 +6,8 @@
 
  let course = undefined;
  let chapters = [];
- let currentIndex = 0;
- console.log($page.params);
+ let currentIndex = $page.params.chapter || 0;
+ console.log($page.params)
 
  onMount(async function() {
      course = getCourseById(data.id);
@@ -49,6 +49,7 @@
         <div class="course">
             <h3>{course.title}</h3>
             <p>{@html course.description}</p>
+            <h4>{chapters[currentIndex]?.title}</h4>
             <div class="content">
                 <iframe src={chapters[currentIndex]?.video_url} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
