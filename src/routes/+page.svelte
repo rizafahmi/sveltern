@@ -7,7 +7,7 @@
         <div class="course">
             <div class="thumbnail">
                 {#if course.thumbnail !== ""}
-                    <img width="128" src="http://127.0.0.1:8090/api/files/{course.collectionId}/{course.id}/{course.thumbnail}" />
+                    <img width="128" src="http://0.0.0.0:8090/api/files/{course.collectionId}/{course.id}/{course.thumbnail}" />
                 {:else}
                     <img width="128" src="/logo.png" />
                 {/if}
