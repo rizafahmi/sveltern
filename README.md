@@ -79,14 +79,9 @@ $ npm run dev # or pnpm dev
 - [x] Styling active chapter
 - [x] URL dengan slug (pengganti id)
 - [x] Bug class active not working if page refresh
-- [ ] Refactor detail page
-  - Using #await
 - [ ] Fitur realtime dengan pocketbase subscribe (mohon bantuannya)
 - [ ] Deploy
-- [ ] Form upload content (tentative)
-- [ ] Auth (tentative)
 - [ ] Menggunakan aspect ratio untuk thumbnail youtube
-- [ ] Solusi untuk loading thumbnail youtube (tentaive)
 
 ## Prompts GPT
 
